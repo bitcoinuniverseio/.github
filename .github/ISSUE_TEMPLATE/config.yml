@@ -1,8 +1,11 @@
 blank_issues_enabled: true
 contact_links:
   - name: Security vulnerability (private)
-    url: https://github.com/bitcoinuniverseio/.github/security/advisories/new
-    about: Never report vulnerabilities in public issues. Use private vulnerability reporting on the affected repository, or here if unsure.
+    url: https://github.com/bitcoinuniverseio/.github/blob/main/SECURITY.md
+    about: Never report vulnerabilities in public issues. This policy gives two private routes, and one of them always works.
   - name: Documentation portal
     url: https://docs.bitcoinuniverse.io
     about: The documentation home. Check it before filing; if it fails to answer you, that is a documentation bug worth filing.
+  - name: Live status
+    url: https://docs.bitcoinuniverse.io/status/live/
+    about: Before filing an outage, check here. Unavailable is never the same as empty, and the status pages say which one you are seeing.

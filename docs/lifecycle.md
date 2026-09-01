@@ -2,6 +2,10 @@
 
 Every Bitcoin Universe repository, documentation page, status card, and capability claim uses these terms with exactly these meanings. Do not invent synonyms.
 
+This file is the version repositories are held to. The portal publishes the reader-facing version of the same vocabulary at [How to read our status](https://docs.bitcoinuniverse.io/status/); the two are kept in agreement, and a difference between them is a bug worth reporting.
+
+The five component-lifecycle values below are also the exact enum of the `lifecycle` field in every `docs.manifest.json`, and the eight data and service states are the values products and APIs return.
+
 ## Component lifecycle
 
 | State | Meaning |
@@ -27,6 +31,8 @@ Every Bitcoin Universe repository, documentation page, status card, and capabili
 
 ## Hard rules
 
-- Code existing in a repository is never evidence that a capability is released. Capability claims come from release evidence and capability manifests.
-- `unavailable` is never rendered as an empty result. `unknown` is never rendered as zero.
-- Every `deprecated` claim names the replacement and the window. Every `archived` surface names its replacement or states that none exists.
+- **Code presence is never availability.** Code existing in a repository is never evidence that a capability is released. A capability is claimed only when release evidence backs it: a released version, a capability manifest, and a validated contract.
+- **Unavailable is never empty.** If a source is down, a reader sees that the source is down, not a blank list.
+- **Unknown is never zero.** A balance we cannot read shows as unreadable, never as `0`.
+- **Freshness is measured, not asserted.** Live status derives from bounded public endpoints, and every status card shows when it last updated. Those endpoints are declared per repository in `docs.manifest.json` under `statusSources`, and the portal's aggregated status is built only from endpoints declared there.
+- **Every state change names its destination.** A `deprecated` claim names the replacement and the removal window. An `archived` surface names its replacement or states plainly that none exists, and its manifest carries the `archived` object with `date`, `reason`, and `replacement`, where `replacement` may be `null` only when nothing genuinely replaced it.
