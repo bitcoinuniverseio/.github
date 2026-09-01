@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "org-profile",
+  "name": "Organization profile and community standards",
+  "classification": "infrastructure",
+  "repository": "bitcoinuniverseio/.github",
+  "documentationUrl": "https://docs.bitcoinuniverse.io/support/",
+  "docsRoot": ".",
+  "sourceRef": "main",
+  "releasedRef": "eeb86da822288033785b6a615845f9fad13ad26c",
+  "releaseVersion": "continuous",
+  "lifecycle": "stable",
+  "chains": [],
+  "audiences": [
+    "app-developer",
+    "protocol-implementer",
+    "security-verifier"
+  ],
+  "owners": [
+    "bitcoinuniverseio"
+  ],
+  "lastVerified": {
+    "commit": "eeb86da822288033785b6a615845f9fad13ad26c",
+    "timestamp": "2026-09-01T12:40:00Z"
+  },
+  "securityClassification": "public"
+}
