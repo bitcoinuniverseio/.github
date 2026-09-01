@@ -1,0 +1,37 @@
+name: Documentation issue
+description: A page is wrong, unclear, unsafe, or missing something it promised
+labels: [documentation]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: URL of the page, or the repository path if reading source
+      placeholder: https://docs.bitcoinuniverse.io/...
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Problem type
+      options:
+        - Factually wrong
+        - Unsafe instruction
+        - Unclear or confusing
+        - Out of date with the released product
+        - Broken link, anchor, or example
+        - Missing information I needed
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: What is wrong
+      description: Quote the exact text where possible, and say what you were trying to do
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What would be correct
+      description: If you know the correct fact or wording, put it here with evidence
