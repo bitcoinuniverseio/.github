@@ -1,0 +1,23 @@
+name: Content request
+description: Ask for a guide, reference, or example that does not exist yet
+labels: [documentation, content-request]
+body:
+  - type: input
+    id: audience
+    attributes:
+      label: Who you are
+      placeholder: e.g. app developer integrating the runes API, wallet user, indexer operator
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: What you are trying to do
+      description: The task, not the page. We write docs for tasks.
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you found instead
+      description: Pages you read that failed to get you there
