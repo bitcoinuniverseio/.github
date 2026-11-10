@@ -6,7 +6,7 @@ Keep this file short. Put long guides in the owning repo and leave a pointer her
 
 ## What every Universe agent does
 
-1. Initialize before writing code: read that repo’s `PROGRESS.md` or session boot file (`BOOT.md` in `king`), `DECISIONS.md`, `feature_list.json` if present, and `git log --oneline -5`. Record the exact HEAD sha. Run `./init.sh` when the repo has one.
+1. Initialize before writing code: read that repo’s `PROGRESS.md` or session boot file (such as `BOOT.md`), `DECISIONS.md`, `feature_list.json` if present, and `git log --oneline -5`. Record the exact HEAD sha. Run `./init.sh` when the repo has one.
 2. Work on one feature at a time (WIP=1).
 3. Do not mark a feature done because code was added. Done means verification evidence is recorded.
 4. Leave a clean handoff: update progress, decisions, verification notes, and the feature list; delete leftovers (debug logs, temp files, commented-out code, stray TODOs).
