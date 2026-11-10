@@ -1,0 +1,1 @@
+{"task":"Audit organization defaults and remove obsolete product-name reference","ok":true,"detail":"Retained the unique organization guide and generalized its boot-file example; no workflows or tests are tracked.","fix":"Updated AGENTS.md without changing the boot-file instruction."}
